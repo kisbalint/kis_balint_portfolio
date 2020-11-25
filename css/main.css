@@ -1,0 +1,243 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/* layout */
+	body{
+		display: grid;
+		grid-template-areas:
+		"fejlec"
+		"kontent"
+		"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh
+
+	}
+	header{
+		position: relative;
+		background-color: white;
+		grid-area: fejlec;
+	}
+
+	main{
+		background-color: lightblue;
+		grid-area: kontent;
+	}
+
+	footer{
+		background-color: white;
+		grid-area: lablec;
+	}
+
+/* láblác */
+	footer div{
+		display: inline-block;
+		margin: .5rem 1rem;
+	}
+
+/* fejléc */
+
+	header{
+		position: relative;
+		line-height: 2rem;
+		
+		padding: .75rem 1rem;
+
+	}
+
+	header .nev{
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+		font-size: 2rem;
+		user-select: none;
+		padding-left: .5rem;
+
+
+
+	}
+
+	.nev:hover{
+		background-color: lightblue;
+		min-width: max-content;
+		border-radius: 1rem;
+		text-align: center;
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+
+	.header_bal{
+		float: left;
+		text-align: left;
+		min-width: min-content;
+	}
+
+	.header_jobb{
+		display: inline-block;
+		margin-top: .4rem;
+		float: right;
+	}
+
+	.megismero{
+		display: inline-block;
+		cursor: pointer;
+		user-select: none;
+		font-weight: 400;
+		padding-right: .5rem;
+	}
+
+	.megismero:hover{
+		background-color: lightblue;
+		min-width: max-content;
+		border-radius: 1rem;
+		text-align: center;
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+
+	#lenyilo_menu.latszodik{
+		display: block;
+	}
+
+	#lenyilo_menu{
+		position: absolute;
+		right: 1rem;
+		top: 4rem;
+		display: none;
+		border: 1px solid rgba(0,0,0,.2);
+		border-radius: 8px;
+		text-align: left;
+		-webkit-box-shadow: 12px -6px 17px 0px rgba(0, 0, 0, 0.57);
+		-moz-box-shadow:    12px -6px 17px 0px rgba(0, 0, 0, 0.57);
+		box-shadow:         12px -6px 17px 0px rgba(0, 0, 0, 0.57);
+		max-height: max-content;
+		overflow: hidden;
+	}
+
+	.lenyilo_almenu{
+		padding-left:1rem; 
+		padding-right:1rem;
+		line-height: 2.5rem;
+		background-color: white;
+	}
+
+	.lenyilo_almenu:hover{
+		background-color: gainsboro;
+	}
+
+/* index */
+	h1{
+		margin: 1rem;
+		font-size: 1rem;
+	}
+
+	p{
+		margin: 0 2rem;
+		text-align: justify;
+	}
+
+	.rolam{
+		max-height: 10rem;
+		float: left;
+		border-radius: .25rem;
+		margin: .25rem;
+		/*transform: translateY(.5rem);*/
+	}
+
+/* tanulmanyaim */
+	.kiskepek{
+		max-height: 2rem;
+		transform: translateY(.5rem);
+	}
+	h2{
+		margin: 1rem;
+		font-size: 1rem;
+	}
+
+	h3{
+		margin: 1rem;
+		font-size: 1rem;
+	}
+
+/* tapmun */
+	h4{
+		margin: .5rem 2rem;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	h5{
+		margin: 1rem 2rem .5rem 2rem;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+/* hogyan */
+	.kartya{
+		background-color: white;
+		border: 2px solid black;
+		padding: .5rem 1rem;
+		border-radius: 2rem;
+		margin: .7rem;
+		text-align: center;
+	}
+
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		/* grid-gap: .5rem; */
+	}
+
+	.kartyacim{
+		font-weight: 400;
+		margin: 0 .5rem;
+	}
+
+	.kartya img{
+		max-height: 32rem;
+		border: 1px solid black;
+		border-radius: .5rem;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.kartya p{
+		margin: .5rem;
+	}
+
+	ul{
+		margin: 1rem;
+		text-align: left;
+	}
+	li{
+		margin-bottom: .5rem;
+	}
+
+
+
+
+
+
+
+
+
+
+

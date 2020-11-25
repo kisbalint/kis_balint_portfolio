@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hogyan készült ez az oldal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" connect="width-device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function fejlec_lenyito(){
+			var element = document.getElementById("lenyilo_menu");
+			element.classList.toggle("latszodik");
+		}
+	</script>
+
+	<header> 
+		<div class="header_bal">
+			<a href="index.html" class="nev"><span>Kis Bálint</span></a>
+		</div>
+
+		<div class="header_jobb">
+			<div class="megismero" onclick="fejlec_lenyito()">Ismerj meg jobban</div>
+			<div id="lenyilo_menu" class="">
+				<a href="tanulmanyaim.html"><div class="lenyilo_almenu" href="tanulmanyaim.html" >Tanulmányaim</div></a>
+				<a href="tapmun.html"><div class="lenyilo_almenu">Tapasztalat / Munkahelyek</div></a>
+				<a href="hogyan.html"><div class="lenyilo_almenu">Hogyan készült ez az oldal</div></a>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+		<div class="grid">
+		<div class="kartya">
+			<span class="kartyacim">Főoldal</span>
+			<img src="css/kepek/oldal1.png" alt="első oldal terve">
+			<p>
+				A tervezés első lépéseként az oldal fő arculatát terveztem meg. Megrajzoltam a fej-, és lábláceket, valamint az egyfajta "home button"-ként funkcionáló nevem elhelyezkedését is.
+			</p>
+		</div>
+		<div class="kartya">
+			<span class="kartyacim">Lenyíló ablak</span>
+			<img src="css/kepek/oldal2.png" alt="első oldal terve">
+			<p>
+				Második lépésként az oldalak közötti navigációt oldottam meg, egy lenyíló füllel, az "Ismerj meg jobban" szövegre kattintva. A lenyíló fül alap kinézetét is megterveztem.
+			</p>
+		</div>
+		<div class="kartya">
+			<span class="kartyacim">Tanulmányaim ablak</span>
+			<img src="css/kepek/oldal3.png" alt="első oldal terve">
+			<p>
+				A tanulmányaim ablaknál egyfajta felsorolást gondoltam a "main" részbe, minden iskolámhoz egy két kommenttel az ott töltött éveimről.
+			</p>
+		</div>
+		<div class="kartya">
+			<span class="kartyacim">Tapasztalat / Munka ablak</span>
+			<img src="css/kepek/oldal4.png" alt="első oldal terve">
+			<p>
+				Ennél az ablaknál hasonlóan a Tanulmányaim ablakhoz szintén felsorolás jelleggel közölném a munkahelyeimet némi hozzászólással, valamint ezt kiegészítve írnék az egyéb tapasztalataimról.
+			</p>
+		</div>
+		<div class="kartya">
+			<span class="kartyacim">Hogyan készült ez az oldal ablak</span>
+			<img src="css/kepek/oldal5.png" alt="első oldal terve">
+			<p>
+				Ezt az oldalt "kártyák" kialakításával képzeltem el, ahol minden egyes oldalnál leírom, hogy hogyan terveztem a megvalósítását.
+			</p>
+		</div>
+		<div class="kartya">
+			<span class="kartyacim">Felhasznált internetes oldalak</span>
+			<ul>
+				<a href="https://css3gen.com/box-shadow/"><li>css3gen.com shadow generátora</li></a>
+				<a href="https://www.w3schools.com/colors/colors_names.asp"><li>w3schools.com színpalettája</li></a>
+				<a href="https://fonts.google.com"><li>google fonts betűtípusai</li></a>
+			</ul>
+		</div>
+		</div>
+	</main>
+	<footer>
+		<div><span>Elérhetőségem:</span></div>
+		<div><span>01 23 456 7890</span></div>
+		<div><span>hamis@gmail.com</span></div>
+	</footer>
+
+</body>
+</html>
